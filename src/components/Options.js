@@ -8,10 +8,11 @@ const Options = (props) => {
         <button onClick={props.handleDeleteOptions}>remove All</button>
             {
                 props.options.map((element) => (
-                    <Option key={element} 
-                            optionText={element}
-                            handleDeleteOption={props.handleDeleteOption}
-                            />
+                    <Option 
+                        key={element} 
+                        optionText={element}
+                        handleDeleteOption={props.handleDeleteOption}
+                        />
                     
                     ))
             }
